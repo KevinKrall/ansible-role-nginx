@@ -1,7 +1,7 @@
 ---
 
 dependencies:
-  - role: pki
+  - role: adfinis-sygroup.pki
 
 galaxy_info:
   author: 'Adfinis SyGroup AG'
