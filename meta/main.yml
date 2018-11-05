@@ -4,6 +4,7 @@ dependencies:
   - role: adfinis-sygroup.pki
 
 galaxy_info:
+  role_name: 'nginx'
   author: 'Adfinis SyGroup AG'
   description: 'Install and configure nginx with virtualhosts'
   company: 'Adfinis SyGroup AG'
