@@ -131,3 +131,13 @@ nginx_vhosts: []
 #         - location: /cgi-bin/icinga
 #           root: /usr/lib/cgi-bin/icinga
 #           document_root: /usr/lib
+#     # this example shows how to configure nginx with autoindex for listing a directory
+#     - name: mirror.example.com
+#       default: true
+#       type: standard-with-http
+#       acme: false
+#       document_root: /var/lib/mirror
+#       alias:
+#         - src: /
+#           dest: /var/lib/mirror/
+#           autoindex: true

@@ -57,6 +57,9 @@ server {
 
     location {{ alias.src }} {
         alias {{ alias.dest }};
+        {% if alias.autoindex %}
+        autoindex on;
+        {% endif %}
     }
 {% endfor %}
 {% endif %}
@@ -108,6 +111,9 @@ server {
 
     location {{ alias.src }} {
         alias {{ alias.dest }};
+        {% if alias.autoindex %}
+        autoindex on;
+        {% endif %}
     }
 {% endfor %}
 {% endif %}
