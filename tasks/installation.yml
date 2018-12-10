@@ -1,5 +1,11 @@
 ---
 
+- name: ensure apt-transport-https is installed
+  apt:
+    name: apt-transport-https
+    state: present
+  when: ansible_os_family == 'Debian'
+
 - name: configure upstream nginx apt key
   apt_key:
     url: '{{ nginx_upstream_repo_key }}'
