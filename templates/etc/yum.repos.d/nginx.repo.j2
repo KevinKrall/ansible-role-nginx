@@ -1,5 +1,5 @@
 # {{ ansible_managed }}
-{% if ansible_distribution == "RedHat" %}
+{% if ansible_distribution == "RedHat" or ansible_distribution == "OracleLinux" %}
 {% set distribution = "rhel" %}
 {% else %}
 {% set distribution = ansible_distribution %}
